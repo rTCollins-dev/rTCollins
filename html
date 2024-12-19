@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rTC Automobiles</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="shortcut icon" type="image/icon" href="assets/logo/favicon.png"/>
+</head>
+<body>
+    <header>
+        <h1>rTC Automobiles</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#cars">Cars</a></li>
+                <li><a href="#service">Service</a></li>
+                <li><a href="#contact">Connect with us</a></li>
+                <li><a href="#enquiry">Leave a review</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="welcome-hero">
+        <h2>Welcome to Our Car Dealership</h2>
+        <p>Explore our range of luxurious cars. We have a wide range of luxurious, yet affordable cars to suit your taste. We're here to help you drive your dream car home.</p>
+        <button class="welcome-btn" onclick="window.location.href='#enquiry'">Contact Us</button>
+    </section>
+
+    <section id="cars">
+        <h2>Browse through our wide range of exotic cars.</h2>
+        <div class="car-list">
+            <div class="car">
+                <img src="assets/images/cars/bmw1.jpg" alt="BMW 3 Series">
+                <h3>BMW 3 Series</h3>
+                <p>Price: $40,000</p>
+                <p><strong>Specifications:</strong></p>
+                <ul>
+                    <li>Engine: 2.0L I4</li>
+                    <li>Horsepower: 255 hp</li>
+                    <li>0-60 mph: 5.6 seconds</li>
+                    <li>Fuel Economy: 26/36 mpg</li>
+                </ul>
+                <p><strong>Features:</strong></p>
+                <ul>
+                    <li>Leather seats</li>
+                    <li>Navigation system</li>
+                    <li>Bluetooth connectivity</li>
+                </ul>
+                <button onclick="openInquiryModal('BMW 3 Series')">Inquire</button>
+            </div>
+            <div class="car">
+                <img src="assets/images/cars/toyota2.jpg" alt="Toyota Supra">
+                <h3>Toyota Supra</h3>
+                <p>Price: $79,800</p>
+                <p><strong>Specifications:</strong></p>
+                <ul>
+                    <li>Engine: 3.0L I6</li>
+                    <li>Horsepower: 335 hp</li>
+                    <li>0-60 mph: 5.3 seconds</li>
+                    <li>Fuel Economy: 21/26 mpg</li>
+                </ul>
+                <p><strong>Features:</strong></p>
+                <ul>
+                    <li>All-wheel drive</li>
+                    <li>Panoramic sunroof</li>
+                    <li>Adaptive cruise control</li>
+                </ul>
+                <button onclick="openInquiryModal('Toyota Supra')">Inquire</button>
+            </div>
+            <div class="car">
+                <img src="assets/images/cars/bugatti.jpg" alt="Bugatti Chiron">
+                <h3>Bugatti Chiron</h3>
+                <p>Price: $300,000</p>
+                <p><strong>Specifications:</strong></p>
+                <ul>
+                    <li>Engine: 8.0L W16</li>
+                    <li>Horsepower: 1500 hp</li>
+                    <li>0-60 mph: 2.5 seconds</li>
+                    <li>Fuel Economy: 9/14 mpg</li>
+                </ul>
+                <p><strong>Features:</strong></p>
+                < <ul>
+                    <li>Convertible</li>
+                    <li>Sport seats</li>
+                    <li>Premium audio system</li>
+                </ul>
+                <button onclick="openInquiryModal('Bugatti Chiron')">Inquire</button>
+            </div>
+            <div class="car">
+                <img src="assets/images/cars/nissan.jpg" alt="Nissan Pathfinder">
+                <h3>Nissan Pathfinder</h3>
+                <p>Price: $106,788</p>
+                <p><strong>Specifications:</strong></p>
+                <ul>
+                    <li>Engine: 3.5L V6</li>
+                    <li>Horsepower: 271 hp</li>
+                    <li>0-60 mph: 5.3 seconds</li>
+                    <li>Fuel Economy: 26/29 mpg</li>
+                </ul>
+                <p><strong>Features:</strong></p>
+                <ul>
+                    <li>All-wheel drive</li>
+                    <li>Huge cargo space</li>
+                    <li>Adaptive cruise control</li>
+                </ul>
+                <button onclick="openInquiryModal('Nissan Pathfinder')">Inquire</button>
+            </div>
+            <div class="car">
+                <img src="assets/images/cars/range.jpg" alt="Range Rover Velar">
+                <h3>Range Rover Velar</h3>
+                <p>Price: $201,788</p>
+                <p><strong>Specifications:</strong></p>
+                <ul>
+                    <li>Engine: 3.9L V8</li>
+                    <li>Horsepower: 299 hp</li>
+                    <li>0-60 mph: 6.1 seconds</li>
+                    <li>Fuel Economy: 30/38 mpg</li>
+                </ul>
+                <p><strong>Features:</strong></p>
+                <ul>
+                    <li>All-wheel drive</li>
+                    <li>Luxurious interior</li>
+                    <li>Adaptive cruise control</li>
+                </ul>
+                <button onclick="openInquiryModal('Range Rover Velar')">Inquire</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="enquiry" style="padding: 2rem; background-color: #f8f9fa;">
+        <div style="max-width: 600px; margin: 0 auto;">
+            <h2 style="text-align: center; font-size: 2rem; margin-bottom: 1rem;">Enquiry Form</h2>
+            <p style="text-align: center; margin-bottom: 2rem;">
+                Have questions about a car? Fill out the form below, and we’ll get back to you!
+            </p>
+            <form action="/submit-enquiry" method="post" style="background: white; padding: 1.5rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                <div style="margin-bottom: 1rem;">
+                    <label for="name" style="display: block; font-weight: bold; margin-bottom: 0.5rem;">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required style="width: 100%; padding: 0.75rem; border: 1px solid #ddd; border-radius: 4px;">
+                </div>
+                <div style="margin-bottom: 1rem;">
+                    <label for="email" style="display: block; font-weight: bold; margin-bottom: 0.5rem;">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required style="width: 100%; padding: 0.75rem; border: 1px solid #ddd; border-radius: 4px;">
+                </div>
+                <div style="margin-bottom: 1rem;">
+                    <label for="phone" style="display: block; font-weight: bold; margin-bottom: 0.5rem;">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" style="width: 100%; padding: 0.75rem; border: 1px solid #ddd; border-radius: 4px;">
+                </div>
+                <div style="margin-bottom: 1rem;">
+                    <label for="message" style="display: block; font-weight: bold; margin-bottom: 0.5rem ;">Your Message</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Enter your message" required style="width: 100%; padding: 0.75rem; border: 1px solid #ddd; border-radius: 4px;"></textarea>
+                </div>
+                <button type="submit" style="width: 100%; padding: 0.75rem; background-color: #007bff; color: white; border: none; border-radius: 4px; font-size: 1rem; font-weight: bold; cursor: pointer;">
+                    Submit Enquiry
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <footer id="contact" class="contact">
+        <div class="container">
+            <div class="footer-top">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="single-footer-widget">
+                            <div class="footer-logo">
+                                <a href="index.html">rTC Automobile</a>
+                            </div>
+                            <div class="footer-contact">
+                                <p>1realcollins.x1@gmail.com</p>
+                                <p>+233 203646829</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-6">
+                        <div class="single-footer-widget">
+                            <h2>About rTC Automobile</h2>
+                            <ul>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Career</a></li>
+                                <li><a href="#">Terms of Service</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-12">
+                        <div class="single-footer-widget">
+                            <h2>Top Brands</h2>
+                            <div class="row">
+                                <div class="col-md-7 col-xs-6">
+                                    <ul>
+                                        <li><a href="#">BMW</a></li>
+                                        <li><a href="#">Lamborghini</a></li>
+                                        <li><a href="#">Camaro</a></li>
+                                        <li><a href="#">Audi</a></li>
+                                        <li><a href="#">Infiniti</a></li>
+                                        <li><a href="#">Nissan</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-5 col-xs-6">
+                                    <ul>
+                                        <li><a href="#">Ferrari</a></li>
+                                        <li><a href="#">Porsche</a></li>
+                                        <li><a href="#">Land Rover</a></li>
+                                        <li><a href="#">Aston Martin</a></li>
+                                        <li><a href="#">Mercedes Benz</a></li>
+                                        <li><a href="#">Opel</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-offset-1 col-md-3 col-sm-6">
+                        <div class="single-footer-widget">
+                            <h2>Newsletter</h2>
+                            <div class="footer-newsletter">
+                                <p>Subscribe to get the latest news updates and information</p>
+                            </div>
+                            <div class="hm-foot-email">
+                                <div class="foot-email-box">
+                                    <input type="text" class="form-control" placeholder="Add Email">
+                                </div>
+                                <div class="foot-email-subscribe">
+                                    <span><i class="fa fa-arrow-right"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <p>&copy; 2024 rTC Car Dealership. All rights reserved.</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="footer-social">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                            <a href="#"><i class="fa fa-pinterest-p"></i></a>
+                            <a href="#"><i class="fa fa-behance"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js /jquery.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+</body>
+</html>
